@@ -78,7 +78,7 @@ namespace CampeonatosFIFA.Persistencia.Contexto
                         .HasForeignKey(e => e.IdGrupo);
 
                     builder.Entity<GrupoPais>()
-                        .HasOne(e => e.Pais)
+                        .HasOne(e => e.Seleccion)
                         .WithMany()
                         .HasForeignKey(e => e.IdPais);
             //____________________________________________________________________________________________________
